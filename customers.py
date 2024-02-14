@@ -2,7 +2,7 @@
 
 # FOLLOW PROJECT INSTRUCTIONS TO CREATE TABLE FOR CUSTOMER DATAs
 
-create_customers = """ CREATE TABLE customers(
+create_customers = """ CREATE TABLE IF NOT EXISTS customers(
                         id SERIAL PRIMARY KEY,
                         first_name VARCHAR(50),
                         last_name VARCHAR(50),

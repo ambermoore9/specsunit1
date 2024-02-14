@@ -30,10 +30,9 @@ try:
             with cursor:
                 cursor.execute(product_revenue_query)
                 return cursor.fetchall()
-    product_revenue = get_revenue()
 
 #### create a variable called product_revenue and set it equal to the get_revenue function invoked 
-    product_revenue = get_revenue
+    product_revenue = get_revenue()
 #### print the product_revenue variable to look at the structure of the variable to help you write the next function
     print(product_revenue)
 #### write a function which loops through the product_revenue variable and creates two lists - one with product categories and one with total revenue values

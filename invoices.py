@@ -2,7 +2,7 @@
 
 # FOLLOW PROJECT INSTRUCTIONS TO CREATE TABLE FOR INVOICE DATA
 
-create_invoices = """ CREATE TABLE invoices (
+create_invoices = """ CREATE TABLE IF NOT EXISTS invoices (
                         invoice_id SERIAL PRIMARY KEY,
                         stock_code VARCHAR(50),
                         product_category VARCHAR(50),

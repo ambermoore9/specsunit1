@@ -2,7 +2,7 @@
 # write import statements for psycopg2 and Error from psycopg2 package #
 import psycopg2
 from psycopg2 import Error
-
+print("imported psypcopg")
 try:
     # connection to database
     print("Connecting...") # DO NOT ALTER OR DELETE
@@ -17,10 +17,10 @@ try:
     def get_connected():
          connection = psycopg2.connect(
                     dbname = "postgres",
-                    user = "postgres",
+                    user = "postgres.fsqdifvxzthoessplcvz",
                     password = "1TkEMbTSleckh4je",
-                    host = "db.fsqdifvxzthoessplcvz.supabase.co",
-                    port = "5432")
+                    host = "aws-0-us-west-1.pooler.supabase.com",
+                    port = "6543")
          return connection
     
     connection = get_connected()
